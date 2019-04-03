@@ -1,0 +1,35 @@
+{
+  "name": "lookshop",
+  "version": "1.0.0",
+  "description": "about project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/register": "^7.0.0",
+    "browser-sync": "^2.26.3",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^2.1.0",
+    "gulp-svgstore": "^7.0.1",
+    "node-sass": "^4.11.0",
+    "webpack-stream": "^5.2.1",
+    "yargs": "^13.2.2"
+  },
+  "dependencies": {
+    "swiper": "^4.4.6"
+  }
+}

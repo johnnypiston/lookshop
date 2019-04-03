@@ -1,0 +1,31 @@
+@import './src/styles/utils/variables.scss';
+@import './src/styles/utils/mixins.scss';
+
+@import './src/styles/common/base.scss';
+
+@import './src/styles/common/buttons.scss';
+@import './src/styles/common/forms.scss';
+
+@import './src/styles/header/header.scss';
+@import './src/styles/header/search.scss';
+@import './src/styles/header/cart.scss';
+@import './src/styles/header/menu/menu.scss';
+
+@import './src/styles/page-index/social/social-row.scss';
+@import './src/styles/page-index/social/subscription.scss';
+@import './src/styles/common/social-links.scss';
+
+@import './src/styles/page-index/banners.scss';
+
+@import './src/styles/common/tabs.scss';
+@import './src/styles/page-index/selects.scss';
+
+@import './src/styles/product/product-grid.scss';
+@import './src/styles/product/product-card.scss';
+
+@import './src/styles/page-index/main-slider.scss';
+@import './src/styles/page-index/promo.scss';
+@import './src/styles/page-index/brands.scss';
+@import './src/styles/page-index/about.scss';
+
+@import './src/styles/footer/footer.scss';

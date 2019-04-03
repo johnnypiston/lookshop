@@ -1,0 +1,27 @@
+.promo {
+  margin-top: 25px;
+}
+
+.promo__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px;
+
+  &::before,
+  &::after {
+    background-color: #d8d8d8;
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+  }
+}
+
+.promo__title {
+  margin: 0;
+  padding: 0 15px;
+
+  img {
+    display: block;
+  }
+}

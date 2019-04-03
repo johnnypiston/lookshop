@@ -1,0 +1,40 @@
+.btn {
+  position: relative;
+
+  border: none;
+  border-bottom: 3px solid #c5c2bd;
+  display: inline-block;
+  padding: 0.5em 1em;
+
+  font: inherit;
+  color: #000000;
+  letter-spacing: 0.03em;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: normal;
+  word-wrap: normal;
+
+  background-color: #eeeeee;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+
+  &--coral {
+    background-color: $coral;
+    border-bottom-color: $coral-shadow;
+    color: #ffffff;
+    
+
+    &:hover {
+    }
+
+    &:active {
+    }
+  }
+}

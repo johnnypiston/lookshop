@@ -1,0 +1,37 @@
+.input {
+  display: block;
+  padding: 0.5em 0.7em;
+  width: 100%;
+
+  color: #000000;
+  font-size: 1em;
+  font-family: inherit;
+  line-height: 1.25;
+
+  background-color: #ffffff;
+  border: 1px solid #000000;
+
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+
+  &:focus {
+    outline: 0;
+    box-shadow:0 0 0 2px rgba($coral, 1);
+  }
+
+  &:-ms-input-placeholder {  
+    color: #9f9f9f;  
+  }
+  
+  &:-moz-placeholder {
+    color: #9f9f9f;  
+  }
+  
+  &::-moz-placeholder {
+    color: #9f9f9f;  
+  }
+  
+  &::-webkit-input-placeholder {
+    color: #9f9f9f;
+  }
+}

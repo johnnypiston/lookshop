@@ -1,0 +1,25 @@
+.search {
+  line-height: 1;
+}
+
+.search__field {
+  display: none;
+}
+
+.search__btn-show {
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+  background-color: #000000;
+  padding: 7px 10px;
+}
+
+.search__btn-submit {
+  display: none;
+}
+
+.search__icon {
+  fill: #ffffff;
+  height: 16px;
+  width: 16px;
+}

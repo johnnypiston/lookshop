@@ -1,0 +1,36 @@
+.brands {
+  border-bottom: 1px solid #d8d8d8;
+  margin-top: 55px;
+}
+
+.brands__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  &::before,
+  &::after {
+    background-color: #d8d8d8;
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+  }
+}
+
+.barnds__title {
+  color: #414141;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.brands__grid {
+  list-style: none;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Lookshop</title>
+    <link rel="stylesheet" href="resources/styles/styles.css" />
+  </head>
+  <body>
+    <div class="svg-sprite" style="display: none;">
+      @@include('./blocks/common/sprite.svg')
+    </div>
+    @@include('./blocks/header/header.html')
+
+    <main>
+      @@include('./blocks/page-index/main-slider/main-slider.html')
+
+      <div class="social">
+        <div class="layout social__inner">
+          <form class="subscription" action="">
+            <fieldset>
+              <legend class="visually-hidden">Subscription</legend>
+              <div class="subscription__content">
+                <span class="subscription__text">Stay updated</span>
+                <label class="subscription__label">
+                  <span class="visually-hidden">Your email address</span>
+                  <input
+                    class="input subscription__input"
+                    type="text"
+                    placeholder="Your email address"
+                  />
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn btn--coral subscription__btn" type="submit">
+              Subscribe              
+              <svg class="icon-svg subscription__btn-icon">
+                <use xlink:href="#plus">
+              </svg>            
+            </button>
+          </form>
+
+          <div class="social__links">
+            <span>Find us here</span>
+            @@include('./blocks/common/social-links.html')
+          </div>
+        </div>
+      </div>
+
+      <div class="layout">
+        <section class="banners">
+          <a href="#" class="banners__item"
+            ><img src="resources/img/promo-001.jpg" alt="Best outfits & looks"
+          /></a>
+          <a href="#" class="banners__item"
+            ><img
+              src="resources/img/promo-002.jpg"
+              alt="Summer party collection"
+          /></a>
+          <a href="#" class="banners__item"
+            ><img src="resources/img/promo-003.jpg" alt="Best sellers"
+          /></a>
+          <a href="#" class="banners__item"
+            ><img src="resources/img/promo-004.jpg" alt="Fall leather"
+          /></a>
+        </section>
+      </div>
+
+      <div class="tabs selects">
+        <div class="layout">
+          <ul class="tabs__links selects__links" role="tablist">
+            <li>
+              <a
+                class="tabs__link selects__link selects__link--active"
+                href="#tab001"
+                >what’s hot?</a
+              >
+            </li>
+            <li>
+              <a class="tabs__link selects__link" href="#tab002">designers</a>
+            </li>
+            <li>
+              <a class="tabs__link selects__link" href="#tab003">featured</a>
+            </li>
+            <li>
+              <a class="tabs__link selects__link" href="#tab004">latest</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tabs__content-wrap selects__content-wrap">
+          <div
+            class="tabs__content-item tabs__content-item--active selects__content-item"
+            id="tab001"
+          >
+            <div class="selects__carousel swiper-container layout">              
+              <div class="swiper-wrapper">
+                @@loop('./blocks/product/product-card.html', [
+                  {"product-title": "Mimosa lace dress", "price": "76.95", "image": "resources/img/product-001.jpg", "sale": false},
+                  {"product-title": "Feel tank", "price": "59.95", "image": "resources/img/product-002.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false},
+                  {"product-title": "Petrol sweater", "price": "21.50", "image": "resources/img/product-004.jpg", "sale": true},
+                  {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-001.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false},
+                  {"product-title": "Petrol sweater", "price": "21.50", "image": "resources/img/product-004.jpg", "sale": true}
+                ])       
+              </div>
+              <div class="selects__button-prev js-selects-prev"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-left-bold"></svg></div>
+              <div class="selects__button-next js-selects-next"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-right-bold"></svg></div>   
+            </div>
+          </div>
+          <div class="tabs__content-item selects__content-item" id="tab002">
+            <div class="selects__carousel swiper-container layout">
+              <div class="swiper-wrapper">
+                @@loop('./blocks/product/product-card.html', [
+                  {"product-title": "Mimosa lace dress", "price": "76.95", "image": "resources/img/product-001.jpg", "sale": false},
+                  {"product-title": "Feel tank", "price": "59.95", "image": "resources/img/product-002.jpg", "sale": true},
+                  {"product-title": "Feel tank", "price": "59.95", "image": "resources/img/product-002.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false},
+                  {"product-title": "Petrol sweater", "price": "21.50", "image": "resources/img/product-004.jpg", "sale": true},
+                  {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-001.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false}
+                ])
+              </div>
+              <div class="selects__button-prev js-selects-prev"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-left-bold"></svg></div>
+              <div class="selects__button-next js-selects-next"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-right-bold"></svg></div>
+            </div>
+          </div>
+          <div class="tabs__content-item selects__content-item" id="tab003">
+            <div class="selects__carousel swiper-container layout">
+              <div class="swiper-wrapper">
+                @@loop('./blocks/product/product-card.html', [
+                  {"product-title": "Feel tank", "price": "59.95", "image": "resources/img/product-002.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false},
+                  {"product-title": "Petrol sweater", "price": "21.50", "image": "resources/img/product-004.jpg", "sale": true},
+                  {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-001.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false},                  
+                  {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-001.jpg", "sale": true}
+                ])
+              </div>
+              <div class="selects__button-prev js-selects-prev"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-left-bold"></svg></div>
+              <div class="selects__button-next js-selects-next"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-right-bold"></svg></div>
+            </div>
+          </div>
+          <div class="tabs__content-item selects__content-item" id="tab004">
+            <div class="selects__carousel swiper-container layout">
+              <div class="swiper-wrapper">
+                @@loop('./blocks/product/product-card.html', [                    
+                  {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-001.jpg", "sale": true},
+                  {"product-title": "Petrol sweater", "price": "21.50", "image": "resources/img/product-004.jpg", "sale": true},
+                  {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-001.jpg", "sale": true},
+                  {"product-title": "Hot shorts", "price": "35.95", "image": "resources/img/product-003.jpg", "sale": false},
+                  {"product-title": "Petrol sweater", "price": "21.50", "image": "resources/img/product-004.jpg", "sale": true}
+                ])
+              </div>
+              <div class="selects__button-prev js-selects-prev"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-left-bold"></svg></div>
+              <div class="selects__button-next js-selects-next"><svg class="icon-svg selects__arrow"><use xlink:href="#arrow-right-bold"></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="promo">
+        <div class="layout">
+          <div class="promo__header">
+            <h2 class="promo__title">
+              <img
+                src="resources/img/badge-clearance.png"
+                alt="Clearance 50%"
+              />
+            </h2>
+          </div>
+          <div class="promo__products product-grid">
+            @@loop('./blocks/product/product-card.html', [
+              {"product-title": "Nadia dress", "price": "64.95", "image": "resources/img/product-008.jpg", "sale": false},
+              {"product-title": "Sofi blouse", "price": "26.95", "image": "resources/img/product-007.jpg", "sale": true},
+              {"product-title": "Gooding shorts", "price": "79.95", "image": "resources/img/product-006.jpg", "sale": false},
+              {"product-title": "Mimosa lace dress", "price": "76", "image": "resources/img/product-005.jpg", "sale": true}
+            ])
+          </div>
+        </div>
+      </section>
+
+      <section class="brands">
+        <div class="brands__header">
+          <h2 class="barnds__title">Favourite brands</h2>
+        </div>
+        <div class="layout">
+          <ul class="brands__grid">
+            <li class="brands__logo">
+              <img src="resources/img/brand-001.png" alt="Addict" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-002.png" alt="Abadon shif" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-003.png" alt="adidas" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-004.png" alt="boy london" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-005.png" alt="converse" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-006.png" alt="CalvinKlein" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-007.png" alt="Edwin" />
+            </li>
+            <li class="brands__logo">
+              <img src="resources/img/brand-008.png" alt="Grenson" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="layout">
+        <section class="about">
+          <h2 class="about__title">About LookShop</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            impedit beatae deserunt accusantium iure quam maiores a dolorem,
+            aliquid odit nulla animi laborum sapiente. Neque non perferendis
+            ducimus dolorum sequi omnis magnam molestiae fuga mollitia iusto.
+            Nemo fugit incidunt eum? Eius recusandae alias, eos quidem,
+            architecto saepe eveniet atque, provident animi dolores dolorem modi
+            labore molestias consequuntur esse aspernatur excepturi dolore quasi
+            harum? Rem dolorem velit tempora neque, in modi.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    @@include('./blocks/footer/footer.html')
+    <script src="resources/js/scripts.js"></script>
+  </body>
+</html>

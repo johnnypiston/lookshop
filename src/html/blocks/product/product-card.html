@@ -1,0 +1,18 @@
+<div class="product-card swiper-slide">
+  <div class="product-card__inner">
+    <a class="product-card__pic" href="#">
+      <img src="@@image" alt="" />
+      <div class="product-card__shop-badge">
+        <div class="product-card__shop-badge-inner"><svg class="icon-svg product-card__badge-icon"><use xlink:href="#shop-bag"></svg> Shop it</div>
+      </div>
+    </a>
+    <div class="product-card__info">
+      <a class="product-card__title" href="#">@@product-title</a>
+      <div class="product-card__price">$@@price</div>
+      <button class="btn btn--coral product-card__cart-btn">Add to cart <svg class="icon-svg product-card__btn-icon"><use xlink:href="#plus"></svg></button>
+    </div>
+    @@if (sale === true) {
+      <div class="product-card__badge">Sale</div>
+    }
+  </div>
+</div>

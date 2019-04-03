@@ -1,0 +1,43 @@
+<header class="header">
+  <div class="header__upper-row">
+    <div class="layout header__upper-layout">
+      <div class="header__customcare">
+        custom care: <a href="tel:888234567">888-23-4567</a>
+      </div>
+      <div class="header__options">
+        <select class="currency" name="">
+          <option selected>&#36; US</option>
+          <option>&#128; EU</option>
+          <option>&#165;</option>
+          <option>&#8381;</option>
+        </select>
+        <div class="user"><svg class="icon-svg user__icon"><use xlink:href="#user"></svg> My account</div>
+        <form class="search" action="">
+          <label class="search__field">Search <input type="search"/></label>
+          <button class="search__btn-show" type="button">
+            Show search bar <svg class="icon-svg search__icon"><use xlink:href="#magnifier"></svg>
+          </button>
+          <button class="search__btn-submit" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="header__main-row">
+      <div class="header__logo">
+        <a href="/"><img src="resources/img/logo.png" alt="LookShop"/></a>
+      </div>
+      <div class="cart">
+        <div class="cart__list">Your cart</div>
+        <a class="cart__info" href="#">
+          <svg class="icon-svg cart__icon-bag"><use xlink:href="#shop-bag"></svg>
+          <div class="cart__items">
+            <span class="cart__items-count">0 items</span> | <span>$ 12</span>
+          </div>
+        </a>
+      </div>
+      @@include('./blocks/header/menu/menu.html')
+    </div>
+  </div>
+</header>

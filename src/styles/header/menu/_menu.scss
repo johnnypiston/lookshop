@@ -1,0 +1,44 @@
+.menu {
+  order: 2;
+  margin-left: auto;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+  }
+}
+
+.menu__item {
+  align-items: center;
+  color: #000000;
+  display: flex;
+  font-size: 16px;
+  padding: 10px 15px;
+  position: relative;
+  text-transform: lowercase;
+  text-decoration: none;
+
+  &::after {
+    content: '';
+    @include arrow(bottom, #000, 4px);
+    margin-left: 5px;
+  }
+
+  &:hover {
+    color: $coral;
+  }
+
+  &:hover::after {
+    @include arrow(bottom, $coral, 4px);
+  }
+}
+
+.menu__sub-list {
+  display: none;
+}

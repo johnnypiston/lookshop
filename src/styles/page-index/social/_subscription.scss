@@ -1,0 +1,39 @@
+.subscription {
+  display: flex;
+  align-items: center;
+  
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.subscription__content {
+  align-items: center;
+  display: flex;
+}
+
+.subscription__text {
+  color: #6b6b6b;
+  font-size: 12px;
+  margin-right: 15px;
+}
+
+.subscription__input {
+  border: none;
+  font-size: 12px;
+  padding: 7px 10px 8px;
+  width: 150px;
+}
+
+.subscription__btn {
+  font-size: 0;
+  padding: 6px 8px 5px;
+}
+
+.subscription__btn-icon {
+  fill: #ffffff;
+  height: 16px;
+  width: 16px;
+}
